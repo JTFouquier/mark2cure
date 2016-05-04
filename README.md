@@ -1,5 +1,7 @@
 # Mark2Cure
 
+|Build Status|
+
 [Mark2Cure](http://mark2cure.org/) is a web-based, concept recognition, relationship extraction and validation tool for annotating text. It is intended to be a fun and exploratory way to help biomedical research, but can readily be extended to other disciplines of study where publication rates far exceed a researcher's ability to consume and incorporate knowledge from the literature.
 
 Scientific communication is broken.
@@ -315,6 +317,8 @@ server.
 TEST Travis
 TEST Travis
 
+.. |Build Status| image:: https://travis-ci.org/JTFouquier/mark2cure.svg?branch=master 
+  :target: https://travis-ci.org/JTFouquier/mark2cure
 
 [Virtual Environment Wrapper]:http://virtualenvwrapper.readthedocs.org/en/latest/install.html
 [Django Web Framework]:https://www.djangoproject.com/start/overview/
