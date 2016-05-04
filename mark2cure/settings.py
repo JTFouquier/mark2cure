@@ -29,10 +29,12 @@ class Base(Configuration):
     def setup(cls):
         super(Base, cls).setup()
 
+    '''
         cls.RAVEN_CONFIG = {
             'dsn': cls.SENTRY_DSN,
             'release': raven.fetch_git_sha(cls.PROJECT_PATH),
         }
+    '''
 
     SECRET_KEY = SecretValue(environ_prefix='MARK2CURE')
     ADMINS = ()
@@ -102,7 +104,7 @@ class Base(Configuration):
         'gunicorn'
     )
 
-    SENTRY_DSN = SecretValue(environ_prefix='MARK2CURE')
+    # SENTRY_DSN = SecretValue(environ_prefix='MARK2CURE')
     LOGGING = {
         'version': 1,
         'disable_existing_loggers': True,
