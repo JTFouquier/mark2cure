@@ -6,6 +6,9 @@ services:
 python:
   - "2.7.8"
 
+before_install:
+  - export MARK2CURE_BROKER_URL='amqp://'
+
 install:
   - pip install -r requirements.txt
 
