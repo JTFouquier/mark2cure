@@ -351,7 +351,6 @@ class Development(Base):
 
     DATABASES = DatabaseURLValue(environ_prefix='MARK2CURE')
 
-    '''
     if 'test' in sys.argv:
         import dj_database_url
         DATABASES = {'default': dj_database_url.parse('sqlite://' + Base.PROJECT_PATH + '/test_db.sqlite')}
@@ -359,7 +358,6 @@ class Development(Base):
 
         SOUTH_LOGGING_ON = True
         SOUTH_LOGGING_FILE = Base.PROJECT_PATH + '/south_logging_file'
-    '''
 
 
     DOMAIN = 'localhost:8000'
