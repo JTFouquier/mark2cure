@@ -7,7 +7,21 @@ python:
   - "2.7.8"
 
 before_install:
+  - export MARK2CURE_SECRET_KEY=‘foo’
+  - export MARK2CURE_ADMIN_PASSWORD=‘foo’
+
+  - export MARK2CURE_MANDRILL_API_KEY=‘foo’
+  - export MARK2CURE_ENTREZ_EMAIL=‘foo’
   - export MARK2CURE_BROKER_URL='amqp://'
+
+  - export MARK2CURE_AWS_ACCESS_KEY_ID=‘foo’
+  - export MARK2CURE_AWS_SECRET_ACCESS_KEY=‘foo’
+
+  - export MARK2CURE_SENTRY_PUBLIC_KEY=‘foo’
+  - export MARK2CURE_SENTRY_PRIVATE_KEY=‘foo’
+  - export MARK2CURE_SENTRY_PROJECT_ID=‘foo’
+  - export MARK2CURE_SENTRY_DSN=‘foo’
+  - export MARK2CURE_DATABASE_URL=‘foo’
 
 install:
   - pip install -r requirements.txt
